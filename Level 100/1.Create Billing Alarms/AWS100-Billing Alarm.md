@@ -12,8 +12,7 @@ Level 100 (Introductory)
 
 * Create a billing alarm for $0
 * Create a billing alarm for $10
-* Create a billing alarm for $25
-* Create a billing alarm for $100
+* Create a billing alarm for $50
 
 ###  You need to answer the following: 
 
@@ -37,3 +36,4 @@ When a billing alarm is triggered, we will receive a notification via Amazon Sim
 
 ## Output
 ![alt text](image.png)
+![alt text](alarm.png)
