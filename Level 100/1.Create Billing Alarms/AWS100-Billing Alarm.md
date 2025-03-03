@@ -10,7 +10,8 @@ Level 100 (Introductory)
 
 ###  You need to complete the following:
 
-* Create a billing alarm for $5
+* Create a billing alarm for $0
+* Create a billing alarm for $10
 * Create a billing alarm for $25
 * Create a billing alarm for $100
 
@@ -35,4 +36,5 @@ When a billing alarm is triggered, we will receive a notification via Amazon Sim
 * [Creating a Billing Alarm to Monitor Your Estimated AWS Charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)
 
 ## Output
+![alt text](D:\Git\AWS_Project_Jerome\Level 100\1.Create Billing Alarms\bill.png)
 ![alt text](image.png)
