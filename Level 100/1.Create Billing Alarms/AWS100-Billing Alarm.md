@@ -1,4 +1,4 @@
-# BIL01-AWS100 — Create Billing Alarms
+# Create Billing Alarms
 
 ## Cloud Service Provider
 * Amazon Web Services (AWS)
