@@ -29,4 +29,4 @@ Projects are labeled based these four levels:
 - **Project 4**:  Push a Docker Image to Amazon ECR Repository
   - **Description**: This project involves building a Docker image and pushing it to an Amazon Elastic Container Registry (ECR) repository. This process includes creating an ECR repository, tagging the Docker image, and using AWS CLI commands to authenticate and push the image to the repository.
   - **Service Used**: Amazon Elastic Container Registry (ECR), Docker, AWS CLI
-  - **Link**: [Project Directory](https://github.com/Dark-Cookie/AWS-Projects/tree/main/Level%20100/4.%20Push%20a%20Docker%20Image%20to%20Amazon%20ECR%20Repository)
+  - **Link**: [Project Directory]()
