@@ -1,4 +1,4 @@
-# DBS03-AWS100 - Creating an Amazon RDS DB Instance (MS SQL Server)
+# AWS100 - Creating an Amazon RDS DB Instance (MySQL)
 
 ## Cloud Service Provider
 
@@ -14,7 +14,7 @@
 ### You need to complete the following:
 
 - Setup a database instance on Amazon RDS
-- Create a MS SQL Server database instance on RDS
+- Create a MySQL database instance on RDS
 - Connect to RDS database instance from your local
 
 ### You need to answer the following:
@@ -47,10 +47,20 @@ To create a database instance on Amazon RDS, follow these steps:
      - **Standard create:** Offers complete customization.
      - **Easy create:** Offers pre-configured settings for beginners.
 
-2. Select a database engine (**SQL Server Express Edition**).
+2. Select a database engine (**MySQL**).
 3. Choose a version for the engine (Latest).
+4. Select Templates 
+    - **Standard create:** Use defaults for high availability and fast, consistent performance.
+    - **Dev/Test:** This instance is intended for development use outside of a production environment.
+    - **Free tier:** Use RDS Free Tier to develop new applications, test existing applications, or gain hands-on experience with Amazon RDS
 
-**Step 3: Set up the Database Instance**
+**Step 3: Availability and durability**
+Deployment options
+- **Multi-AZ DB cluster:** Creates a DB cluster with three DB instances. Each DB instance is in a different Availability Zone. A Multi-AZ DB cluster has one primary DB instance and two readable standby DB instances. Using a Multi-AZ DB cluster provides high availability, increased capacity for read workloads, and lower latency.
+- **Multi-AZ DB instance:** Creates a primary DB instance with one standby DB instance in a different Availability Zone. Using a Multi-AZ DB instance provides high availability, but the standby DB instance doesn't support connections for read workloads.
+- **Multi-AZ DB instance:** Creates a single DB instance with no standby instances.
+
+**Step 4: Set up the Database Instance**
 
 1. **Instance Class:** Choose the size of the instance (`db.t3.micro`).
 2. **Storage:** Specify the storage type and allocated space (SSD).
