@@ -80,7 +80,7 @@ Deployment options
     -  Choose the number of days that Amazon RDS should retain automatic backups of this DB instance.
         -   The backup retention period determines the period for which you can perform a point-in-time recovery
         -   Aurora offers 1-day backup retention for free!
-    - Backup replication You can replicate automated backups to another AWS Region to help with disaster recovery. Snapshots and transaction logs are replicated immediately after they are available in the source.
+    - **Backup replication:** You can replicate automated backups to another AWS Region to help with disaster recovery. Snapshots and transaction logs are replicated immediately after they are available in the source.
 2. **Encryption:** Enable encryption for the database instance (optional).
 3. **Maintenance:** Configure maintenance windows, parameter groups, and more.
 4. **Maintenance window:** select the period in which you want pending modifications (such as changing the DB instance class) or patches applied to the DB instance by Amazon RDS. Any such maintenance should be started and completed within the selected period. If you do not select a period, Amazon RDS will assign a period randomly. 
