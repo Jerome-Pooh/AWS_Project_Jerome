@@ -46,7 +46,6 @@ To create a database instance on Amazon RDS, follow these steps:
 1. Choose a database creation method:
      - **Standard create:** Offers complete customization.
      - **Easy create:** Offers pre-configured settings for beginners.
-
 2. Select a database engine (**MySQL**).
 3. Choose a version for the engine (Latest).
 4. Select Templates 
@@ -60,23 +59,32 @@ Deployment options
 - **Multi-AZ DB instance:** Creates a primary DB instance with one standby DB instance in a different Availability Zone. Using a Multi-AZ DB instance provides high availability, but the standby DB instance doesn't support connections for read workloads.
 - **Multi-AZ DB instance:** Creates a single DB instance with no standby instances.
 
-**Step 4: Set up the Database Instance**
+**Step 4: Configure Database identifier and Credentials**
+1. Specify a name that is unique for all DB instances
+2. Set the master username and password for your database.
+
+**Step 4: Set up the Database Instance configuration**
 
 1. **Instance Class:** Choose the size of the instance (`db.t3.micro`).
+    - **Standard:** Standard instances provide a balance of compute, memory, and network resources. They are a good choice for many database workloads.
+    - **Memory optimized classes:** Memory optimized instances accelerate performance for workloads that process large data sets in memory.
+    - **Burstable classes:** Burstable performance instances provide a baseline level of CPU performance with the ability to burst above the baseline.
 2. **Storage:** Specify the storage type and allocated space (SSD).
+    - **storage autoscaling:** Choose the dynamic storage scaling setting required by planned workload of this DB instance.
 3. **VPC and Subnet:** Select the VPC and subnet where you want to deploy the RDS instance.
-4. **Database identifier:** Provide a name for your database instance.
-
-**Step 4: Configure Database Credentials**
-
-1. Set the master username and password for your database.
-2. Choose **Public accessibility** for the database to be publicly accessible.
+   - Choose **Public accessibility** for the database to be publicly accessible.
 
 **Step 5: Advanced Settings**
 
 1. **Backup:** Configure automatic backups and retention period.
+    -  Choose the number of days that Amazon RDS should retain automatic backups of this DB instance.
+        -   The backup retention period determines the period for which you can perform a point-in-time recovery
+        -   Aurora offers 1-day backup retention for free!
+    - Backup replication You can replicate automated backups to another AWS Region to help with disaster recovery. Snapshots and transaction logs are replicated immediately after they are available in the source.
 2. **Encryption:** Enable encryption for the database instance (optional).
 3. **Maintenance:** Configure maintenance windows, parameter groups, and more.
+4. **Maintenance window:** select the period in which you want pending modifications (such as changing the DB instance class) or patches applied to the DB instance by Amazon RDS. Any such maintenance should be started and completed within the selected period. If you do not select a period, Amazon RDS will assign a period randomly. 
+4. **Deletion protection:** Protects the database from being deleted accidentally. While this option is enabled, you can’t delete the database.
 
 **Step 6: Review and Launch**
 1. Review your configurations.
