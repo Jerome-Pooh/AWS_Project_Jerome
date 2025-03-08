@@ -67,7 +67,7 @@ Deployment options
 2. Set the master username and password for your database.
 ![alt text](settings.png)
 
-**Step 4: Set up the Database Instance configuration**
+**Step 5: Set up the Database Instance configuration**
 
 1. **Instance Class:** Choose the size of the instance (`db.t3.micro`).
     - **Standard:** Standard instances provide a balance of compute, memory, and network resources. They are a good choice for many database workloads.
@@ -83,7 +83,7 @@ Deployment options
    - Choose **Public accessibility** for the database to be publicly accessible.
     ![alt text](connectivity.png)
 
-**Step 5: Advanced Settings**
+**Step 6: Advanced Settings**
 
 1. **Backup:** Configure automatic backups and retention period.
     -  Choose the number of days that Amazon RDS should retain automatic backups of this DB instance.
@@ -98,7 +98,7 @@ Deployment options
 4. **Deletion protection:** Protects the database from being deleted accidentally. While this option is enabled, you can’t delete the database.
 ![alt text](encryption.png)
 
-**Step 6: Review and Launch**
+**Step 7: Review and Launch**
 1. Review your configurations.
 2. Click **Create Database**.
 
@@ -122,6 +122,9 @@ To connect to an RDS database:
 
 **Step 3: Connect via Client Tools**
 - MySQL: Use SQL Electron and connect with the endpoint, port, **username**, and **password**.
+![alt text](SQLelectron.png)
+![alt text](<setting test.png>)
+![alt text](<connection success.png>)
 
 ## References
 - [What is RDS?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
