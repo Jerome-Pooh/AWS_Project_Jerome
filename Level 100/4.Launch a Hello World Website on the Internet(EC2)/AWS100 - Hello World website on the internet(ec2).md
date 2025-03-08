@@ -1,4 +1,4 @@
-# AWS100 - Launch a Hello World website on the internet
+# AWS100 - Launch a Hello World website on the internet(EC2)
 
 ## Cloud Service Provider
 - Amazon Web Services
