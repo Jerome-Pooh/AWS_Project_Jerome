@@ -47,12 +47,13 @@ To create a database instance on Amazon RDS, follow these steps:
      - **Standard create:** Offers complete customization.
      - **Easy create:** Offers pre-configured settings for beginners.
 2. Select a database engine (**MySQL**).
+![alt text](<create database.png>)
 3. Choose a version for the engine (Latest).
 4. Select Templates 
     - **Standard create:** Use defaults for high availability and fast, consistent performance.
     - **Dev/Test:** This instance is intended for development use outside of a production environment.
     - **Free tier:** Use RDS Free Tier to develop new applications, test existing applications, or gain hands-on experience with Amazon RDS
-![alt text](<create database.png>)
+    ![alt text](templates.png)
 
 **Step 3: Availability and durability**
 Deployment options
