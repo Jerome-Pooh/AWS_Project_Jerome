@@ -77,11 +77,12 @@ Deployment options
 
 2. **Storage:** Specify the storage type and allocated space (SSD).
     - **storage autoscaling:** Choose the dynamic storage scaling setting required by planned workload of this DB instance.
-    ![alt text](settings.png)
+    ![alt text](storage.png)
 
 3. **VPC and Subnet:** Select the VPC and subnet where you want to deploy the RDS instance.
    - Choose **Public accessibility** for the database to be publicly accessible.
     ![alt text](connectivity.png)
+
 **Step 5: Advanced Settings**
 
 1. **Backup:** Configure automatic backups and retention period.
@@ -89,19 +90,19 @@ Deployment options
         -   The backup retention period determines the period for which you can perform a point-in-time recovery
         -   Aurora offers 1-day backup retention for free!
     - **Backup replication:** You can replicate automated backups to another AWS Region to help with disaster recovery. Snapshots and transaction logs are replicated immediately after they are available in the source.
-    ![alt text](connectivity.png)
+    ![alt text](backup.png)
 
 2. **Encryption:** Enable encryption for the database instance (optional).
 3. **Maintenance:** Configure maintenance windows, parameter groups, and more.
 4. **Maintenance window:** select the period in which you want pending modifications (such as changing the DB instance class) or patches applied to the DB instance by Amazon RDS. Any such maintenance should be started and completed within the selected period. If you do not select a period, Amazon RDS will assign a period randomly. 
 4. **Deletion protection:** Protects the database from being deleted accidentally. While this option is enabled, you can’t delete the database.
-![alt text](image.png)
+![alt text](encryption.png)
 
 **Step 6: Review and Launch**
 1. Review your configurations.
 2. Click **Create Database**.
 
-Once the RDS instance is launched, it will take a few minutes for the instance to be available.
+Once the RDS instance is launched, it will take a few minutes for the instance to be **Available**.
 ![alt text](finish.png)
 
 ### ***How to connect to RDS database?***
