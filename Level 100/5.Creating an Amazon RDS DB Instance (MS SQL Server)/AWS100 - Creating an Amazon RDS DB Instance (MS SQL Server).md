@@ -146,6 +146,3 @@ To connect to an RDS database:
 ## Tips
 - Having database knowledge is an added advantage
 - 750 hours of Amazon RDS Single-AZ `db.t2.micro` included in free tier
-
-# Output
-![alt text](Image.png)
