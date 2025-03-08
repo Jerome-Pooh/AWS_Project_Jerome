@@ -52,16 +52,19 @@ To create a database instance on Amazon RDS, follow these steps:
     - **Standard create:** Use defaults for high availability and fast, consistent performance.
     - **Dev/Test:** This instance is intended for development use outside of a production environment.
     - **Free tier:** Use RDS Free Tier to develop new applications, test existing applications, or gain hands-on experience with Amazon RDS
+![alt text](<create database.png>)
 
 **Step 3: Availability and durability**
 Deployment options
 - **Multi-AZ DB cluster:** Creates a DB cluster with three DB instances. Each DB instance is in a different Availability Zone. A Multi-AZ DB cluster has one primary DB instance and two readable standby DB instances. Using a Multi-AZ DB cluster provides high availability, increased capacity for read workloads, and lower latency.
 - **Multi-AZ DB instance:** Creates a primary DB instance with one standby DB instance in a different Availability Zone. Using a Multi-AZ DB instance provides high availability, but the standby DB instance doesn't support connections for read workloads.
 - **Multi-AZ DB instance:** Creates a single DB instance with no standby instances.
+![alt text](<availability and durability.png>)
 
 **Step 4: Configure Database identifier and Credentials**
 1. Specify a name that is unique for all DB instances
 2. Set the master username and password for your database.
+![alt text](settings.png)
 
 **Step 4: Set up the Database Instance configuration**
 
@@ -69,11 +72,15 @@ Deployment options
     - **Standard:** Standard instances provide a balance of compute, memory, and network resources. They are a good choice for many database workloads.
     - **Memory optimized classes:** Memory optimized instances accelerate performance for workloads that process large data sets in memory.
     - **Burstable classes:** Burstable performance instances provide a baseline level of CPU performance with the ability to burst above the baseline.
+    ![alt text](instanceConfiguration.png)
+
 2. **Storage:** Specify the storage type and allocated space (SSD).
     - **storage autoscaling:** Choose the dynamic storage scaling setting required by planned workload of this DB instance.
+    ![alt text](settings.png)
+
 3. **VPC and Subnet:** Select the VPC and subnet where you want to deploy the RDS instance.
    - Choose **Public accessibility** for the database to be publicly accessible.
-
+    ![alt text](connectivity.png)
 **Step 5: Advanced Settings**
 
 1. **Backup:** Configure automatic backups and retention period.
@@ -81,16 +88,20 @@ Deployment options
         -   The backup retention period determines the period for which you can perform a point-in-time recovery
         -   Aurora offers 1-day backup retention for free!
     - **Backup replication:** You can replicate automated backups to another AWS Region to help with disaster recovery. Snapshots and transaction logs are replicated immediately after they are available in the source.
+    ![alt text](connectivity.png)
+
 2. **Encryption:** Enable encryption for the database instance (optional).
 3. **Maintenance:** Configure maintenance windows, parameter groups, and more.
 4. **Maintenance window:** select the period in which you want pending modifications (such as changing the DB instance class) or patches applied to the DB instance by Amazon RDS. Any such maintenance should be started and completed within the selected period. If you do not select a period, Amazon RDS will assign a period randomly. 
 4. **Deletion protection:** Protects the database from being deleted accidentally. While this option is enabled, you can’t delete the database.
+![alt text](image.png)
 
 **Step 6: Review and Launch**
 1. Review your configurations.
 2. Click **Create Database**.
 
 Once the RDS instance is launched, it will take a few minutes for the instance to be available.
+![alt text](finish.png)
 
 ### ***How to connect to RDS database?***
 
@@ -104,11 +115,11 @@ To connect to an RDS database:
 
 **Step 2: Configure Security Groups and Networking**
 
-- Ensure that the security group attached to your RDS instance allows inbound connections on the database's port (e.g., 1433 for SQL Server Express Edition).
+- Ensure that the security group attached to your RDS instance allows inbound connections on the database's port (e.g., 3306 for MySQL).
 - If the RDS instance is in a private subnet, you will need a VPN or an EC2 instance within the same VPC to act as a bastion host for the connection.
 
 **Step 3: Connect via Client Tools**
-- SQL Server: Use SQL Server Management Studio (SSMS) and connect with the endpoint, port, **username**, and **password**.
+- MySQL: Use SQL Electron and connect with the endpoint, port, **username**, and **password**.
 
 ## References
 - [What is RDS?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
