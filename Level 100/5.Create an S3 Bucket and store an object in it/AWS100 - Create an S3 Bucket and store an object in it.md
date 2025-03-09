@@ -1,4 +1,4 @@
-# STR04-AWS100 - Create an S3 Bucket and store an object in it
+# AWS100 - Create an S3 Bucket and store an object in it
 
 ## Cloud Service Provider
 - Amazon Web Services
