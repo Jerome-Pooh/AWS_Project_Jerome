@@ -13,6 +13,16 @@
 - Using the console, create an S3 bucket
 - Upload an object (any file) into the bucket
 
+### Create an S3 Bucket:
+
+1. Log in to your AWS Management Console.
+2. Navigate to the S3 service.
+3. Click the “Create bucket” button.
+4. Provide a unique and meaningful name for your bucket.
+5. Choose the region closest to your target audience for better latency.
+6. Leave the other options at their default settings and click “Create bucket.”
+
+![alt text](<s3 bucket.png>)
 
 ### You need to answer the following:
 
@@ -103,6 +113,3 @@ S3 provides different storage classes that allow users to optimize storage costs
 - Try to get the URL for the object you uploaded in this task and access it using a browser, you should get an access denied error
 - Do not store sensitive information in a bucket that has public access.
 - Do not turn on _versioning_ on this bucket, it will be difficult to delete.
-
-## Output
-![alt text](<s3 bucket.png>)
