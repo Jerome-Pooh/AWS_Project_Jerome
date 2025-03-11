@@ -46,7 +46,7 @@ Projects are labeled based these four levels:
   - **Service Used**: Amazon S3, Amazon CloudFront
   - **Link**: [Project Directory](https://github.com/Jerome-Pooh/AWS_Project_Jerome/tree/main/Level%20100/7.Host%20a%20simple%20static%20webpage%20with%20S3%20and%20CloudFront)
 
-- **Project 5**:  Creating an Amazon RDS DB Instance (MySQL)
+- **Project 8**:  Creating an Amazon RDS DB Instance (MySQL)
   - **Description**: Set up and configure a MySQL database instance using Amazon RDS. This includes choosing the appropriate instance type, configuring security settings, setting up backups and maintenance windows, and ensuring high availability.
   - **Service Used**: Amazon Relational Database Service (RDS)
   - **Link**: [Project Directory](https://github.com/Jerome-Pooh/AWS_Project_Jerome/tree/main/Level%20100/8.Creating%20an%20Amazon%20RDS%20DB%20Instance%20(MS%20SQL%20Server))
@@ -71,9 +71,9 @@ Projects are labeled based these four levels:
 
 
 
-- **Project 4**:  Push a Docker Image to Amazon ECR Repository
+- **Project **:  Push a Docker Image to Amazon ECR Repository
   - **Description**: This project involves building a Docker image and pushing it to an Amazon Elastic Container Registry (ECR) repository. This process includes creating an ECR repository, tagging the Docker image, and using AWS CLI commands to authenticate and push the image to the repository.
   - **Service Used**: Amazon Elastic Container Registry (ECR), Docker, AWS CLI
-  - **Link**: [Project Directory]()
+  - **Link**: [Project Directory](https://github.com/Jerome-Pooh/AWS_Project_Jerome/tree/main/Level%20100/Push%20a%20Docker%20Image%20to%20Amazon%20ECR%20Repository)
 
   
