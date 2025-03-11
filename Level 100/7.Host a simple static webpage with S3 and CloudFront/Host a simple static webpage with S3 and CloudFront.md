@@ -44,6 +44,39 @@ Level 100 (Introductory)
 ![alt text](static-host.png)
 ![alt text](static-host1.png)
 
+### Step 4: Make Your S3 Content Public:
+
+1. While still in your bucket’s properties, go to the “Permissions” tab.
+2. Under the “Block public access” section, click “Edit.”
+3. Disable all block settings (or configure according to your security needs).
+4. Scroll down to the “Bucket policy” section and click “Edit.”
+5. Use the following bucket policy template, replacing `”YourBucketName”` with your actual bucket name:
+6. Click “Save changes” to update the bucket policy.
+![alt text](<bucket policy.png>)
+
+### Step 5: Create a CloudFront Distribution:
+
+1. Navigate to the CloudFront service in the AWS Console.
+2. Click “Create Distribution.”
+3. Choose “Web” as the delivery method.
+4. Configure the following settings:
+  - **Origin Domain Name:** Select your S3 bucket from the dropdown.
+  - **Origin Path:** Leave this empty.
+  - **Viewer Protocol Policy:** Redirect HTTP to HTTPS (or adjust based on your needs).
+  - **Allowed HTTP Methods:** GET, HEAD.
+  - **Compress Objects Automatically:** Yes.
+5. Keep the default settings for the remaining options.
+6. Click “Create Distribution.”
+![alt text](<cdn create.png>)
+![alt text](<cdn create1.png>)
+
+### Step 6: Test Your Website:
+
+1. Wait for DNS changes to propagate (up to 24 hours).
+2. Access your website using the CloudFront domain or your custom domain (if set up).
+3. Verify that your HTML pages load correctly and the URLs are secure (HTTPS).
+![alt text](<s3 website with cdn.png>)
+
 ###  You need to answer the following: 
 
 ### ***What is the benefit of using a CDN?***
