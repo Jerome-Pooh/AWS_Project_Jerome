@@ -41,6 +41,8 @@
 
 > 🧠 **Explanation:** Provisioned mode lets you manually control the number of reads and writes per second. It’s useful for predictable workloads and helps manage cost more precisely than on-demand mode.
 
+![alt text](Images/1.png)
+![alt text](Images/1.1.png)
 ---
 
 #### ✅ **2. Create three random items in the table**
@@ -51,9 +53,9 @@
 
 ```json
 {
-  "id": 1,
-  "name": "Alice",
-  "age": 29
+  "id": { "S": "1" },
+  "name": { "S": "Alice" },
+  "age": { "N": "29" }
 }
 ```
 
@@ -62,22 +64,24 @@
 
 ```json
 {
-  "id": 2,
-  "name": "Bob",
-  "age": 34
+  "id": { "S": "2" },
+  "name": { "S": "Bob" },
+  "age": { "N": "34" }
 }
 ```
 
 ```json
 {
-  "id": 3,
-  "name": "Charlie",
-  "age": 25
+  "id": { "S": "3" },
+  "name": { "S": "Carol" },
+  "age": { "N": "41" }
 }
 ```
 
 > 🧠 **Explanation:** Each item represents a set of key-value attributes and is uniquely identified by its partition key (`id`). You’re creating three distinct items for later retrieval.
 
+![alt text](Images/2.png)
+![alt text](Images/2.2.png)
 ---
 
 #### ✅ **3. Run a scan on the table that returns all three items**
@@ -97,6 +101,7 @@
 
 > 🧠 **Explanation:** A query operation searches based on a specific partition key and returns matching items. It is optimized for performance and cost-efficiency compared to scans.
 
+![alt text](Images/4.png)
 ---
 
 ### You need to answer the following:
