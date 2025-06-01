@@ -220,8 +220,4 @@ Yes, DynamoDB is designed to scale horizontally. It automatically partitions and
 * Use numbers as your Primary Keys for this getting started project.
 * Do not use a sort key for this project.
 
-# Output
-
-![alt text](Image.png)
-
 ---
