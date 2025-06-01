@@ -81,7 +81,7 @@
 > 🧠 **Explanation:** Each item represents a set of key-value attributes and is uniquely identified by its partition key (`id`). You’re creating three distinct items for later retrieval.
 
 ![alt text](Images/2.png)
-![alt text](Images/2.2.png)
+![alt text](Images/2.1.png)
 ---
 
 #### ✅ **3. Run a scan on the table that returns all three items**
