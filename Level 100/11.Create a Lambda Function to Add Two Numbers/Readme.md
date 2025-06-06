@@ -28,6 +28,7 @@
    - **Runtime:** Choose Python, Node.js, or any supported language.
    - **Permissions:** Choose or create a role with basic Lambda permissions.
 4. Click **Create function**.
+![alt text](Images/1.png)
 
 ### 2. Add the Code
 
@@ -46,6 +47,8 @@ def lambda_handler(event, context):
 ````
 
 Click **Deploy** to save.
+![alt text](Images/2.png)
+
 
 ### 3. Test the Function
 
@@ -58,8 +61,10 @@ Click **Deploy** to save.
   "num2": 3
 }
 ```
+![alt text](Images/3.png)
 
 3. Run the test and check the output in the **Execution results** panel.
+![alt text](Images/3.1.png)
 
 ---
 
