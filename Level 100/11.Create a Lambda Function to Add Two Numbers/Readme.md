@@ -64,6 +64,7 @@ Click **Deploy** to save.
 ![alt text](Images/3.png)
 
 3. Run the test and check the output in the **Execution results** panel.
+
 ![alt text](Images/3.1.png)
 
 ---
