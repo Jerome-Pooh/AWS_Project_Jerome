@@ -204,6 +204,4 @@ Use the **default Lambda Hello World template** with parameters `event` and `con
 
 Start with **Cloud9 IDE** for development and testing. Then explore other deployment methods such as **ZIP uploads**, **SAM CLI**, and **CI/CD pipelines** for more advanced workflows.
 
-```
-
 ---
